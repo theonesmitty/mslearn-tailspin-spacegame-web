@@ -52,7 +52,7 @@ steps:
     projects: '**/*.csproj'
     publishWebProjects: false
     arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
-    zipAfterPublish: true
+    zipAfterPublish: false
 - template: templates/build.yml
   parameters:
     buildConfiguration: 'Debug'
